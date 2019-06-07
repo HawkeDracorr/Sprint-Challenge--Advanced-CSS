@@ -1,1 +1,24 @@
 // Mixins Here
+
+
+// Mixin for desktop viewport
+.btn-style(@weight, @size) {
+  background-color: @btn-bg-color;
+  border-radius: 6px;
+  font-size: @size;
+  font-weight: @weight;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+// Mixin for mobile viewport
+.btn-style-phone() {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
