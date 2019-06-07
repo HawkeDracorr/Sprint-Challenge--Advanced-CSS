@@ -4,6 +4,10 @@
 
   .intro {
 
+    img {
+      border-radius: 3px;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -11,7 +15,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -47,6 +51,9 @@
     justify-content: center;
 
     .walk-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       width: 50%;
 
       h3 {
@@ -58,13 +65,14 @@
       }
 
       .btn {
+        .btn-style(bold, 1.8em);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
