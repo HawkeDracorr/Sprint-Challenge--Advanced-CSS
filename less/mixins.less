@@ -1,6 +1,8 @@
 // Mixins Here
+
+
+// Mixin for desktop viewport
 .btn-style(@weight, @size) {
-  // outline: red solid 2px;
   background-color: @btn-bg-color;
   border-radius: 6px;
   font-size: @size;
@@ -11,8 +13,9 @@
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+// Mixin for mobile viewport
 .btn-style-phone() {
-  // outline: red solid 2px;
   width: 100%;
   height: 6rem;
   display: flex;

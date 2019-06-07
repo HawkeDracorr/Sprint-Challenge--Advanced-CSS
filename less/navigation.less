@@ -1,6 +1,33 @@
 // Navigation code here
 
 nav {
+
+// shimmer effect on title
+  .shimmer {
+  background: black linear-gradient(90deg, rgba(255,255,255,0.4990371148459384) 35%, rgba(243,253,255,.9) 50%, rgba(255,255,255,0.5018382352941176) 65%);
+
+  background-position: -4rem top; /*50px*/
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: shimmer;
+  animation-duration: 3s; //Animation speed
+  animation-iteration-count: infinite; //Animation loop count
+  background-size: 3rem 100%; //size of shimmer effect
+
+}
+// frames for the shimmer
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -20% top;
+    }
+    100% {
+        background-position: 120% top;
+    }
+    100% {
+        background-position: 170% top; //used to add delay between repeats
+    }
+}
   .navbar {
     display: flex;
     flex-direction: column;
@@ -19,6 +46,15 @@ nav {
         color: black;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        }
+        a:hover {
+          color: navy;
+          font-weight: bold;
+          border-bottom: grey dashed 2px;
+          padding-left: .5rem;
+          padding-right: .5rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
       }
     }
   }
